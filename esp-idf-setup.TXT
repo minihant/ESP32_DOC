@@ -1,0 +1,24 @@
+1. Github : https://github.com/espressif/esp-idf
+
+2. Setup Build Environment :
+    install.bat
+    export.bat
+
+3. Configuring the Project:
+    idf.py set-target <chip_name>
+    idf.py menuconfig
+
+4. Compiling the Project
+    idf.py build
+
+5. Flashing the Project
+    idf.py -p PORT flash
+    This will flash the entire project (app, bootloader and partition table) to a new chip
+
+6. Viewing Serial Output
+    idf.py monitor
+
+7. Compiling & Flashing Only the App
+    idf.py app - build just the app.
+    idf.py app-flash - flash just the app.
+                        (will automatically rebuild the app if any source files have changed.)
